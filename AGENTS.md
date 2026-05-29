@@ -16,6 +16,26 @@ Co-authored-by: Codex <noreply@openai.com>
 
 Use this trailer for commits created by Codex unless the user explicitly asks not to include AI co-author attribution.
 
+## Git Commit Message Style
+
+When Codex writes a commit message, use a concise Conventional Commit-style subject:
+
+```text
+type(optional-scope): short imperative summary
+```
+
+Keep the subject focused on the actual change. Use the smallest accurate type:
+
+- `init` (`initialize`): project bootstrap or initial scaffolding, for example `init: project bootstrap`
+- `feat` (`feature`): new pages, modules, interactions, or capabilities, for example `feat(cart): add coupon support`
+- `fix` (`fix`): bug fixes, broken logic, or production issues, for example `fix(login): token refresh error`
+- `style` (`style`): UI, layout, color, spacing, or animation changes, for example `style(home): adjust banner spacing`
+- `refactor` (`refactor`): structural changes that do not alter behavior, for example `refactor(api): simplify request wrapper`
+- `docs` (`documentation`): README, comments, or other documentation changes, for example `docs: update local dev guide`
+- `chore` (`chore`): build, configuration, dependency, or tooling changes, for example `chore: upgrade node to 20`
+- `perf` (`performance`): explicit performance or bundle-size improvements, for example `perf(image): lazy load hero images`
+- `test` (`test`): new or changed tests, for example `test(cart): add price calculation tests`
+
 ## Codex Agent Behavioral Guidelines
 
 Behavioral guidelines to reduce common LLM coding mistakes in Codex agent workflows. Merge with project-specific instructions as needed.
