@@ -21,20 +21,20 @@ Use this trailer for commits created by Codex unless the user explicitly asks no
 When Codex writes a commit message, use a concise Conventional Commit-style subject:
 
 ```text
-type(optional-scope): short imperative summary
+type(optional-scope): 简体中文简短摘要
 ```
 
-Keep the subject focused on the actual change. Use the smallest accurate type:
+Keep the subject focused on the actual change. After the `type` prefix, write the summary in Simplified Chinese while preserving professional terms in English, such as API, README, token, Shopify, or Codex. Use the smallest accurate type:
 
-- `init` (`initialize`): project bootstrap or initial scaffolding, for example `init: project bootstrap`
-- `feat` (`feature`): new pages, modules, interactions, or capabilities, for example `feat(cart): add coupon support`
-- `fix` (`fix`): bug fixes, broken logic, or production issues, for example `fix(login): token refresh error`
-- `style` (`style`): UI, layout, color, spacing, or animation changes, for example `style(home): adjust banner spacing`
-- `refactor` (`refactor`): structural changes that do not alter behavior, for example `refactor(api): simplify request wrapper`
-- `docs` (`documentation`): README, comments, or other documentation changes, for example `docs: update local dev guide`
-- `chore` (`chore`): build, configuration, dependency, or tooling changes, for example `chore: upgrade node to 20`
-- `perf` (`performance`): explicit performance or bundle-size improvements, for example `perf(image): lazy load hero images`
-- `test` (`test`): new or changed tests, for example `test(cart): add price calculation tests`
+- `init` (`initialize`): project bootstrap or initial scaffolding, for example `init: 初始化项目脚手架`
+- `feat` (`feature`): new pages, modules, interactions, or capabilities, for example `feat(cart): 添加优惠券支持`
+- `fix` (`fix`): bug fixes, broken logic, or production issues, for example `fix(login): 修复 token 刷新异常`
+- `style` (`style`): UI, layout, color, spacing, or animation changes, for example `style(home): 调整 banner 间距`
+- `refactor` (`refactor`): structural changes that do not alter behavior, for example `refactor(api): 简化 request wrapper`
+- `docs` (`documentation`): README, comments, or other documentation changes, for example `docs: 更新本地开发说明`
+- `chore` (`chore`): build, configuration, dependency, or tooling changes, for example `chore: 升级 Node 到 20`
+- `perf` (`performance`): explicit performance or bundle-size improvements, for example `perf(image): 优化 hero 图片懒加载`
+- `test` (`test`): new or changed tests, for example `test(cart): 添加价格计算测试`
 
 ## Codex Agent Behavioral Guidelines
 
