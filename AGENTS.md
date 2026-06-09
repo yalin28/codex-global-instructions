@@ -201,5 +201,5 @@ Use these rules whenever you create or refactor Shopify theme sections, snippets
 
 ### Verification
 
-- After changing Shopify Liquid, run Shopify theme validation when available. If no local validation command exists, at minimum inspect the changed section for Liquid/schema syntax, missing `endif/endfor`, unscoped CSS, empty optional output, and mobile breakpoint coverage.
+- After changing Shopify Liquid, validate only the Shopify files changed in the current task when available. Do not run whole-project Shopify theme validation by default, because unrelated theme files can be slow or noisy. If local tooling cannot target the changed files, inspect only those changed files for Liquid/schema syntax, missing `endif/endfor`, unscoped CSS, empty optional output, and mobile breakpoint coverage. Run whole-project Shopify theme validation only when the user explicitly asks for it.
 - When adding or changing interactive UI, verify the behavior in the theme preview or browser if a preview server is available.
